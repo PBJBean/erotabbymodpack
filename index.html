@@ -33,6 +33,38 @@ section.note{border-color:var(--blue)}
 ol{padding-left:1.3em;margin:0}li{margin:8px 0}
 .small{color:var(--muted);font-size:.93rem;margin:10px 0 0}
 footer{text-align:center;color:var(--muted);margin-top:32px;font-weight:700}
+  .navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 760px;
+  margin: 18px auto 0;
+  padding: 0 20px;
+}
+
+.navbar a {
+  font: 600 0.95rem Fredoka, sans-serif;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--card);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 18px;
+  transition: transform 0.1s ease, border-color 0.15s ease;
+}
+
+.navbar a:hover {
+  border-color: var(--pink);
+  transform: translateY(-2px);
+}
+
+.navbar a:active {
+  transform: translateY(1px);
+}
+
 </style>
 <div class="navbar">
 <a href="#Home">Home</a>
